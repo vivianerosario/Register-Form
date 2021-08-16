@@ -11,3 +11,18 @@ class Validator {
       'data-password-validate',
     ]
   }
+  
+  // inicia a validação de todos os campos
+  validate(form) {
+
+    // limpa todas as validações antigas
+    let currentValidations = document.querySelectorAll('form .error-validation');
+
+    if(currentValidations.length) {
+      this.cleanValidations(currentValidations);
+    }
+
+    // pegar todos inputs
+    let inputs = form.getElementsByTagName('input');
+    // transformar HTMLCollection em arr
+    let inputsArray = [...inputs];
