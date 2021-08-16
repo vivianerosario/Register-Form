@@ -9,6 +9,10 @@ class Validator {
       'data-required',
       'data-equal',
       'data-password-validate',
+      'data-cep-validate',
+      'data-endereço-validate',
+      'data-cidade-validate',
+      'data-estado-validate',
     ]
   }
 
