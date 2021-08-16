@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>REGISTRATION FORM</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+  <div id="main-container">
+    <h1>Cadastre-se para acessar o sistema</h1>
+
+    <form id="register-form" action=""> <!-- TAG FORMULÁRIO -->
+      <div class="full-box"> <!-- INICIO DA DIV EMAIL-->
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="2" data-email-validate>
+      </div> <!-- FINAL DA DIV EMAIL -->
+      
+      <div class="full-box"> <!-- INICIO DA DIV CONFIRMAR EMAIL -->
+        <label for="email">Confirmar E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="2" data-email-validate>
+      </div> <!-- FINAL DA DIV CONFIRMA EMAIL -->
+
+      <div class="half-box spacing"> <!-- INICIO DA DIV NOME-->
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
+      </div> <!-- FINAL DA DIV NOME -->
+
+      <div class="half-box"> <!-- INICIO DA DIV SOBRENOME-->
+          <label for="lastname">Sobrenome</label>
+          <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome" data-required data-only-letters>
+      </div> <!-- FINAL DA DIV SOBRENOME-->
+
+
+      <div class="full-box">
+
+        <div>
+          <div class="full-box">
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" placeholder="000.000.000-00" maxlength="11" required>
+        </div> <!-- FINAL DA DIV CPF -->
+
+        <div>
+          <div class="full-box">
+            <label for="tel">telefone</label>
+            <input type="text" id="tel" placeholder="(00)00000-0000)" maxlength="11" required>
+        </div> <!-- FINAL DA DIV CPF -->
+              
+      </div>
+
+        <div>
+          <div class="full-box">
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" placeholder="00000-000" maxlength="9" required>
+        </div> <!-- FINAL DA DIV CEP -->
+      
+      </div>
+
+      <div class="full-box">     <!-- INICIO DA DIV ENDEREÇO -->       
+          <label for="endereço">Endereço</label>
+          <input type="text" id="endereço"  required>
+      </div> <!-- FINAL DA DIV ENDEREÇO-->
+
+      <!--
+      <div class="full-box">  INICIO DA DIV NUMERO 
+          
+          <label for="numero">Número</label>
+          <input type="text" id="numero"  required>
+      </div> FINAL DA DIV NUMERO
+    -->
+  <!-- </div> -->
+  <!-- <div class="row"> -->
+      <div class="full-box"> <!-- INCIO DA DIV BAIRRO -->
+          
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro"  required>
+      </div> <!-- FINAL DA DIV BAIRRO -->
+
+      <div class="full-box"> <!-- INICIO DA DIV CIDADE -->
+          
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade"  required>
+      </div> <!-- FINAL DA DIV CIDADE -->
+
+      <div class="full-box"> <!-- INICIO DA DIV ESTADO --> 
+          
+          <label for="estado">Estado</label>
+          <input type="text" id="estado"  required>
+      </div>  <!-- FINAL DA DIV ESTADO -->
+      </div>
+
+        <!-- INICIO DOS CAMPOS DE SENHA E CONFIRMAÇÃO DE SENHA-->
+      
+        <div>
+          <div class="half-box spacing">
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha" data-password-validate data-required>
+          </div>
+          <div class="half-box">
+            <label for="passconfirmation">Confirmação de senha</label>
+            <input type="password" name="passconfirmation" id="passwordconfirmation" placeholder="Digite novamente sua senha" data-equal="password">
+          </div>
+          <div>
+            <input type="checkbox" name="agreement" id="agreement">
+            <label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de uso</a></label>
+          </div>
+          <div class="full-box">
+            <input id="btn-submit" type="submit" value="Registrar">
+          </div>
+        </form>
+      </div>
+      <p class="error-validation template"></p>
+        </div>
+       
+      
+  <script src="js\scripts.js"></script>
+</body>
+</html>
